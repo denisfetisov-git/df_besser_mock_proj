@@ -132,18 +132,38 @@
                       "type": "table",
                       "style": "",
                       "classes": [
-                        "table-component"
+                        "table-component",
+                        "has-data-binding"
                       ],
                       "attributes": {
                         "chart-color": "#2c3e50",
-                        "chart-title": "Table Title",
-                        "data-source": "",
+                        "chart-title": "DOCS",
+                        "data-source": "67bca227-0fe2-4327-8f35-3551974a23db",
                         "show-header": true,
                         "striped-rows": false,
                         "show-pagination": true,
                         "rows-per-page": 5,
                         "action-buttons": true,
-                        "columns": [],
+                        "columns": [
+                          {
+                            "field": "name",
+                            "label": "Name",
+                            "columnType": "field",
+                            "_expanded": false
+                          },
+                          {
+                            "field": "date",
+                            "label": "Date",
+                            "columnType": "field",
+                            "_expanded": false
+                          },
+                          {
+                            "field": "ID",
+                            "label": "ID",
+                            "columnType": "field",
+                            "_expanded": false
+                          }
+                        ],
                         "id": "ibvt"
                       },
                       "components": [
@@ -186,14 +206,33 @@
                         }
                       ],
                       "chart-color": "#2c3e50",
-                      "chart-title": "Table Title",
-                      "data-source": "",
+                      "chart-title": "DOCS",
+                      "data-source": "67bca227-0fe2-4327-8f35-3551974a23db",
                       "show-header": true,
                       "striped-rows": false,
                       "show-pagination": true,
                       "rows-per-page": 5,
                       "action-buttons": true,
-                      "columns": []
+                      "columns": [
+                        {
+                          "field": "name",
+                          "label": "Name",
+                          "columnType": "field",
+                          "_expanded": false
+                        },
+                        {
+                          "field": "date",
+                          "label": "Date",
+                          "columnType": "field",
+                          "_expanded": false
+                        },
+                        {
+                          "field": "ID",
+                          "label": "ID",
+                          "columnType": "field",
+                          "_expanded": false
+                        }
+                      ]
                     }
                   ],
                   "head": {
@@ -224,7 +263,7 @@
         "symbols": [],
         "version": "0.21.13"
       },
-      "lastUpdate": "2026-04-24T13:08:54.971Z",
+      "lastUpdate": "2026-04-24T13:11:24.966Z",
       "references": {
         "ClassDiagram": "8fc0d6bc-6ed9-4860-9eca-41c660534293",
         "AgentDiagram": "8f8c3abe-ffe5-4808-8410-b4e4a7262223"

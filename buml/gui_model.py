@@ -58,21 +58,36 @@ from besser.BUML.metamodel.gui.binding import DataBinding
 # Screen: wrapper
 wrapper = Screen(name="wrapper", description="Home", view_elements=set(), is_main_page=True, route_path="/home", screen_size="Medium")
 wrapper.component_id = "9VNa8scBXvnTxdC4"
+ibvt_col_0 = FieldColumn(label="Name", field=Documents_name)
+ibvt_col_1 = FieldColumn(label="Date", field=Documents_date)
+ibvt_col_2 = FieldColumn(label="ID", field=Documents_ID)
 ibvt = Table(
     name="ibvt",
-    title="Table Title",
+    title="DOCS",
     primary_color="#2c3e50",
     show_header=True,
     striped_rows=False,
     show_pagination=True,
     rows_per_page=5,
     action_buttons=True,
+    columns=[ibvt_col_0, ibvt_col_1, ibvt_col_2],
     styling=Styling(size=Size(width="100%", min_height="400px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", primary_color="#2c3e50")),
     component_id="ibvt",
     display_order=0,
-    css_classes=["table-component"],
-    custom_attributes={"chart-color": "#2c3e50", "chart-title": "Table Title", "data-source": "", "show-header": True, "striped-rows": False, "show-pagination": True, "rows-per-page": 5, "action-buttons": True, "columns": [], "id": "ibvt"}
+    css_classes=["table-component", "has-data-binding"],
+    custom_attributes={"chart-color": "#2c3e50", "chart-title": "DOCS", "data-source": "67bca227-0fe2-4327-8f35-3551974a23db", "show-header": True, "striped-rows": False, "show-pagination": True, "rows-per-page": 5, "action-buttons": True, "columns": [{'field': 'name', 'label': 'Name', 'columnType': 'field', '_expanded': False}, {'field': 'date', 'label': 'Date', 'columnType': 'field', '_expanded': False}, {'field': 'ID', 'label': 'ID', 'columnType': 'field', '_expanded': False}], "id": "ibvt"}
 )
+domain_model_ref = globals().get('domain_model') or next((v for k, v in globals().items() if k.startswith('domain_model') and hasattr(v, 'get_class_by_name')), None)
+ibvt_binding_domain = None
+if domain_model_ref is not None:
+    ibvt_binding_domain = domain_model_ref.get_class_by_name("Documents")
+if ibvt_binding_domain:
+    ibvt_binding = DataBinding(domain_concept=ibvt_binding_domain, name="DocumentsDataBinding")
+else:
+    # Domain class 'Documents' not resolved; data binding skipped.
+    ibvt_binding = None
+if ibvt_binding:
+    ibvt.data_binding = ibvt_binding
 wrapper.view_elements = {ibvt}
 
 gui_module = Module(

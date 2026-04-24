@@ -13,7 +13,7 @@ from pydantic import BaseModel, field_validator
 ############################################
 class DocumentsCreate(BaseModel):
     name: str
-    date: date
     ID: int
+    date: date
 
 
