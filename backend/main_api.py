@@ -319,7 +319,7 @@ async def create_documents(documents_data: DocumentsCreate, database: Session = 
 
 
     db_documents = Documents(
-        ID=documents_data.ID,        date=documents_data.date,        name=documents_data.name        )
+        date=documents_data.date,        ID=documents_data.ID,        name=documents_data.name        )
 
     database.add(db_documents)
     database.commit()
@@ -342,7 +342,7 @@ async def bulk_create_documents(items: list[DocumentsCreate], database: Session 
             # Basic validation for each item
 
             db_documents = Documents(
-                ID=item_data.ID,                date=item_data.date,                name=item_data.name            )
+                date=item_data.date,                ID=item_data.ID,                name=item_data.name            )
             database.add(db_documents)
             database.flush()  # Get ID without committing
             created_items.append(db_documents.id)
@@ -389,8 +389,8 @@ async def update_documents(documents_id: int, documents_data: DocumentsCreate, d
     if db_documents is None:
         raise HTTPException(status_code=404, detail="Documents not found")
 
-    setattr(db_documents, 'ID', documents_data.ID)
     setattr(db_documents, 'date', documents_data.date)
+    setattr(db_documents, 'ID', documents_data.ID)
     setattr(db_documents, 'name', documents_data.name)
     database.commit()
     database.refresh(db_documents)

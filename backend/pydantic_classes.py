@@ -12,8 +12,8 @@ from pydantic import BaseModel, field_validator
 # Classes are defined here
 ############################################
 class DocumentsCreate(BaseModel):
-    ID: int
     date: date
+    ID: int
     name: str
 
 
