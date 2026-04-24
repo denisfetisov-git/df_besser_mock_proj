@@ -1,0 +1,409 @@
+{
+  "ClassDiagram": [
+    {
+      "id": "8fc0d6bc-6ed9-4860-9eca-41c660534293",
+      "title": "Class Diagram",
+      "model": {
+        "version": "3.0.0",
+        "type": "ClassDiagram",
+        "size": {
+          "width": 820,
+          "height": 340
+        },
+        "interactive": {
+          "elements": {},
+          "relationships": {}
+        },
+        "elements": {
+          "67bca227-0fe2-4327-8f35-3551974a23db": {
+            "id": "67bca227-0fe2-4327-8f35-3551974a23db",
+            "name": "Documents",
+            "type": "Class",
+            "owner": null,
+            "bounds": {
+              "x": -390,
+              "y": -150,
+              "width": 160,
+              "height": 130
+            },
+            "attributes": [
+              "1f5f2003-c4f1-42b8-8ba7-729aa36e86cf",
+              "5685458a-599c-432e-bc8d-1a13b46f2749",
+              "dc7d4ba7-3f84-4828-8522-99cbb1ab42ab"
+            ],
+            "methods": []
+          },
+          "1f5f2003-c4f1-42b8-8ba7-729aa36e86cf": {
+            "id": "1f5f2003-c4f1-42b8-8ba7-729aa36e86cf",
+            "name": "name",
+            "type": "ClassAttribute",
+            "owner": "67bca227-0fe2-4327-8f35-3551974a23db",
+            "bounds": {
+              "x": -389.5,
+              "y": -109.5,
+              "width": 159,
+              "height": 30
+            },
+            "code": "",
+            "visibility": "public",
+            "attributeType": "str",
+            "implementationType": "none",
+            "stateMachineId": "",
+            "quantumCircuitId": "",
+            "isOptional": false,
+            "isDerived": false,
+            "isId": false,
+            "isExternalId": false
+          },
+          "5685458a-599c-432e-bc8d-1a13b46f2749": {
+            "id": "5685458a-599c-432e-bc8d-1a13b46f2749",
+            "name": "date",
+            "type": "ClassAttribute",
+            "owner": "67bca227-0fe2-4327-8f35-3551974a23db",
+            "bounds": {
+              "x": -389.5,
+              "y": -79.5,
+              "width": 159,
+              "height": 30
+            },
+            "code": "",
+            "visibility": "public",
+            "attributeType": "date",
+            "implementationType": "none",
+            "stateMachineId": "",
+            "quantumCircuitId": "",
+            "isOptional": false,
+            "isDerived": false,
+            "isId": false,
+            "isExternalId": false
+          },
+          "dc7d4ba7-3f84-4828-8522-99cbb1ab42ab": {
+            "id": "dc7d4ba7-3f84-4828-8522-99cbb1ab42ab",
+            "name": "ID",
+            "type": "ClassAttribute",
+            "owner": "67bca227-0fe2-4327-8f35-3551974a23db",
+            "bounds": {
+              "x": -389.5,
+              "y": -49.5,
+              "width": 159,
+              "height": 30
+            },
+            "code": "",
+            "visibility": "public",
+            "attributeType": "int",
+            "implementationType": "none",
+            "stateMachineId": "",
+            "quantumCircuitId": "",
+            "isOptional": false,
+            "isDerived": false,
+            "isId": false,
+            "isExternalId": false
+          }
+        },
+        "relationships": {},
+        "assessments": {}
+      },
+      "lastUpdate": "2026-04-24T12:22:35.560Z"
+    }
+  ],
+  "GUINoCodeDiagram": [
+    {
+      "id": "73c204c1-f726-4852-abef-ac68a51b4031",
+      "title": "GUI Diagram",
+      "model": {
+        "pages": [
+          {
+            "name": "Home",
+            "frames": [
+              {
+                "component": {
+                  "type": "wrapper",
+                  "stylable": [
+                    "background",
+                    "background-color",
+                    "background-image",
+                    "background-repeat",
+                    "background-attachment",
+                    "background-position",
+                    "background-size"
+                  ],
+                  "attributes": {
+                    "id": "ia4e"
+                  },
+                  "components": [
+                    {
+                      "name": "Row",
+                      "droppable": ".gjs-cell",
+                      "resizable": {
+                        "tl": 0,
+                        "tc": 0,
+                        "tr": 0,
+                        "cl": 0,
+                        "cr": 0,
+                        "bl": 0,
+                        "br": 0,
+                        "minDim": 1
+                      },
+                      "classes": [
+                        {
+                          "name": "gjs-row",
+                          "private": 1
+                        }
+                      ],
+                      "attributes": {
+                        "id": "iu4f"
+                      },
+                      "components": [
+                        {
+                          "name": "Cell",
+                          "draggable": ".gjs-row",
+                          "resizable": {
+                            "tl": 0,
+                            "tc": 0,
+                            "tr": 0,
+                            "cl": 0,
+                            "cr": 1,
+                            "bl": 0,
+                            "br": 0,
+                            "minDim": 1,
+                            "bc": 0,
+                            "currentUnit": 1,
+                            "step": 0.2
+                          },
+                          "classes": [
+                            {
+                              "name": "gjs-cell",
+                              "private": 1
+                            }
+                          ],
+                          "attributes": {
+                            "id": "in99"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "components": [
+                        {
+                          "type": "textnode",
+                          "content": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table",
+                      "style": "",
+                      "classes": [
+                        "table-component",
+                        "has-data-binding"
+                      ],
+                      "attributes": {
+                        "chart-color": "#2c3e50",
+                        "chart-title": "Table Title",
+                        "data-source": "67bca227-0fe2-4327-8f35-3551974a23db",
+                        "show-header": true,
+                        "striped-rows": false,
+                        "show-pagination": true,
+                        "rows-per-page": 5,
+                        "action-buttons": true,
+                        "columns": [
+                          {
+                            "field": "date",
+                            "label": "Date",
+                            "columnType": "field",
+                            "_expanded": false
+                          },
+                          {
+                            "field": "ID",
+                            "label": "ID",
+                            "columnType": "field",
+                            "_expanded": false
+                          }
+                        ],
+                        "id": "i0iu"
+                      },
+                      "components": [
+                        {
+                          "type": "tbody",
+                          "draggable": [
+                            "table"
+                          ],
+                          "droppable": [
+                            "tr"
+                          ],
+                          "components": [
+                            {
+                              "type": "row",
+                              "draggable": [
+                                "thead",
+                                "tbody",
+                                "tfoot"
+                              ],
+                              "droppable": [
+                                "th",
+                                "td"
+                              ],
+                              "classes": [
+                                "row"
+                              ],
+                              "components": [
+                                {
+                                  "type": "cell",
+                                  "draggable": [
+                                    "tr"
+                                  ],
+                                  "classes": [
+                                    "cell"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "chart-color": "#2c3e50",
+                      "chart-title": "Table Title",
+                      "data-source": "67bca227-0fe2-4327-8f35-3551974a23db",
+                      "show-header": true,
+                      "striped-rows": false,
+                      "show-pagination": true,
+                      "rows-per-page": 5,
+                      "action-buttons": true,
+                      "columns": [
+                        {
+                          "field": "date",
+                          "label": "Date",
+                          "columnType": "field",
+                          "_expanded": false
+                        },
+                        {
+                          "field": "ID",
+                          "label": "ID",
+                          "columnType": "field",
+                          "_expanded": false
+                        }
+                      ]
+                    }
+                  ],
+                  "head": {
+                    "type": "head"
+                  },
+                  "docEl": {
+                    "tagName": "html"
+                  }
+                },
+                "id": "779Xuzg7QJKZXOPV"
+              }
+            ],
+            "id": "ESDrluMjPMObIm2n"
+          }
+        ],
+        "styles": [
+          {
+            "selectors": [
+              {
+                "name": "gjs-row",
+                "private": 1
+              }
+            ],
+            "style": {
+              "display": "table",
+              "padding-top": "10px",
+              "padding-right": "10px",
+              "padding-bottom": "10px",
+              "padding-left": "10px",
+              "width": "100%"
+            }
+          },
+          {
+            "selectors": [
+              {
+                "name": "gjs-cell",
+                "private": 1
+              }
+            ],
+            "style": {
+              "width": "100%",
+              "display": "block"
+            },
+            "mediaText": "(max-width: 768px)",
+            "atRuleType": "media"
+          },
+          {
+            "selectors": [
+              "gjs-cell30"
+            ],
+            "style": {
+              "width": "100%",
+              "display": "block"
+            },
+            "mediaText": "(max-width: 768px)",
+            "atRuleType": "media"
+          },
+          {
+            "selectors": [
+              "gjs-cell70"
+            ],
+            "style": {
+              "width": "100%",
+              "display": "block"
+            },
+            "mediaText": "(max-width: 768px)",
+            "atRuleType": "media"
+          },
+          {
+            "selectors": [
+              {
+                "name": "gjs-cell",
+                "private": 1
+              }
+            ],
+            "style": {
+              "width": "8%",
+              "display": "table-cell",
+              "height": "75px"
+            }
+          },
+          {
+            "selectors": [
+              "gjs-cell30"
+            ],
+            "style": {
+              "width": "30%"
+            }
+          },
+          {
+            "selectors": [
+              "gjs-cell70"
+            ],
+            "style": {
+              "width": "70%"
+            }
+          },
+          {
+            "selectors": [
+              "#in99"
+            ],
+            "style": {
+              "width": "70%"
+            }
+          },
+          {
+            "selectors": [
+              "#i0iu"
+            ],
+            "style": {
+              "width": "100%",
+              "min-height": "400px"
+            }
+          }
+        ],
+        "assets": [],
+        "symbols": [],
+        "version": "0.21.13"
+      },
+      "lastUpdate": "2026-04-24T12:24:21.318Z"
+    }
+  ]
+}
