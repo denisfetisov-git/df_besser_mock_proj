@@ -103,13 +103,13 @@
         "relationships": {},
         "assessments": {}
       },
-      "lastUpdate": "2026-04-24T12:22:35.560Z"
+      "lastUpdate": "2026-04-24T13:02:57.371Z"
     }
   ],
   "GUINoCodeDiagram": [
     {
-      "id": "73c204c1-f726-4852-abef-ac68a51b4031",
-      "title": "GUI Diagram",
+      "id": "eb02c530-687b-46c1-a29c-3e6a9d12a0d4",
+      "title": "GUINoCode 2",
       "model": {
         "pages": [
           {
@@ -127,101 +127,24 @@
                     "background-position",
                     "background-size"
                   ],
-                  "attributes": {
-                    "id": "ia4e"
-                  },
                   "components": [
-                    {
-                      "name": "Row",
-                      "droppable": ".gjs-cell",
-                      "resizable": {
-                        "tl": 0,
-                        "tc": 0,
-                        "tr": 0,
-                        "cl": 0,
-                        "cr": 0,
-                        "bl": 0,
-                        "br": 0,
-                        "minDim": 1
-                      },
-                      "classes": [
-                        {
-                          "name": "gjs-row",
-                          "private": 1
-                        }
-                      ],
-                      "attributes": {
-                        "id": "iu4f"
-                      },
-                      "components": [
-                        {
-                          "name": "Cell",
-                          "draggable": ".gjs-row",
-                          "resizable": {
-                            "tl": 0,
-                            "tc": 0,
-                            "tr": 0,
-                            "cl": 0,
-                            "cr": 1,
-                            "bl": 0,
-                            "br": 0,
-                            "minDim": 1,
-                            "bc": 0,
-                            "currentUnit": 1,
-                            "step": 0.2
-                          },
-                          "classes": [
-                            {
-                              "name": "gjs-cell",
-                              "private": 1
-                            }
-                          ],
-                          "attributes": {
-                            "id": "in99"
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "components": [
-                        {
-                          "type": "textnode",
-                          "content": "0"
-                        }
-                      ]
-                    },
                     {
                       "type": "table",
                       "style": "",
                       "classes": [
-                        "table-component",
-                        "has-data-binding"
+                        "table-component"
                       ],
                       "attributes": {
                         "chart-color": "#2c3e50",
                         "chart-title": "Table Title",
-                        "data-source": "67bca227-0fe2-4327-8f35-3551974a23db",
+                        "data-source": "",
                         "show-header": true,
                         "striped-rows": false,
                         "show-pagination": true,
                         "rows-per-page": 5,
                         "action-buttons": true,
-                        "columns": [
-                          {
-                            "field": "date",
-                            "label": "Date",
-                            "columnType": "field",
-                            "_expanded": false
-                          },
-                          {
-                            "field": "ID",
-                            "label": "ID",
-                            "columnType": "field",
-                            "_expanded": false
-                          }
-                        ],
-                        "id": "i0iu"
+                        "columns": [],
+                        "id": "ibvt"
                       },
                       "components": [
                         {
@@ -264,26 +187,13 @@
                       ],
                       "chart-color": "#2c3e50",
                       "chart-title": "Table Title",
-                      "data-source": "67bca227-0fe2-4327-8f35-3551974a23db",
+                      "data-source": "",
                       "show-header": true,
                       "striped-rows": false,
                       "show-pagination": true,
                       "rows-per-page": 5,
                       "action-buttons": true,
-                      "columns": [
-                        {
-                          "field": "date",
-                          "label": "Date",
-                          "columnType": "field",
-                          "_expanded": false
-                        },
-                        {
-                          "field": "ID",
-                          "label": "ID",
-                          "columnType": "field",
-                          "_expanded": false
-                        }
-                      ]
+                      "columns": []
                     }
                   ],
                   "head": {
@@ -293,105 +203,16 @@
                     "tagName": "html"
                   }
                 },
-                "id": "779Xuzg7QJKZXOPV"
+                "id": "bNXkd8qeF3DXp7n5"
               }
             ],
-            "id": "ESDrluMjPMObIm2n"
+            "id": "9VNa8scBXvnTxdC4"
           }
         ],
         "styles": [
           {
             "selectors": [
-              {
-                "name": "gjs-row",
-                "private": 1
-              }
-            ],
-            "style": {
-              "display": "table",
-              "padding-top": "10px",
-              "padding-right": "10px",
-              "padding-bottom": "10px",
-              "padding-left": "10px",
-              "width": "100%"
-            }
-          },
-          {
-            "selectors": [
-              {
-                "name": "gjs-cell",
-                "private": 1
-              }
-            ],
-            "style": {
-              "width": "100%",
-              "display": "block"
-            },
-            "mediaText": "(max-width: 768px)",
-            "atRuleType": "media"
-          },
-          {
-            "selectors": [
-              "gjs-cell30"
-            ],
-            "style": {
-              "width": "100%",
-              "display": "block"
-            },
-            "mediaText": "(max-width: 768px)",
-            "atRuleType": "media"
-          },
-          {
-            "selectors": [
-              "gjs-cell70"
-            ],
-            "style": {
-              "width": "100%",
-              "display": "block"
-            },
-            "mediaText": "(max-width: 768px)",
-            "atRuleType": "media"
-          },
-          {
-            "selectors": [
-              {
-                "name": "gjs-cell",
-                "private": 1
-              }
-            ],
-            "style": {
-              "width": "8%",
-              "display": "table-cell",
-              "height": "75px"
-            }
-          },
-          {
-            "selectors": [
-              "gjs-cell30"
-            ],
-            "style": {
-              "width": "30%"
-            }
-          },
-          {
-            "selectors": [
-              "gjs-cell70"
-            ],
-            "style": {
-              "width": "70%"
-            }
-          },
-          {
-            "selectors": [
-              "#in99"
-            ],
-            "style": {
-              "width": "70%"
-            }
-          },
-          {
-            "selectors": [
-              "#i0iu"
+              "#ibvt"
             ],
             "style": {
               "width": "100%",
@@ -403,7 +224,11 @@
         "symbols": [],
         "version": "0.21.13"
       },
-      "lastUpdate": "2026-04-24T12:38:10.456Z"
+      "lastUpdate": "2026-04-24T13:02:56.888Z",
+      "references": {
+        "ClassDiagram": "8fc0d6bc-6ed9-4860-9eca-41c660534293",
+        "AgentDiagram": "8f8c3abe-ffe5-4808-8410-b4e4a7262223"
+      }
     }
   ]
 }
